@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/eb339bb978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="upper-container">
+        <h1> Math Partner</h1>
+        <input type="button" id="savedBtn" value="SAVED SOLUTIONS" onclick="SavedButton()">
+    </div>
+    <div class="middle-container">
+        <div class="box1">
+            <label for="solutionBar"><h2>Problem</h2></label>
+            <input type="text" id="solutionBar" placeholder="TYPE HERE......" required>
+        </div>
+        <div class="box2">
+            <label for="categoryBar"><h2>select Category</h2></label>
+            <select name="categoryBar" id="categoryBar">
+                <option value="Simplify">Simplify</option>
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+            </select>
 
+        </div>
+        <div class="box3">
+            <button type="submit" id="searchBtn" onclick="SearchButton()"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body> 
+</html>
