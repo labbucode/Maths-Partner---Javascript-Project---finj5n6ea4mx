@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/eb339bb978.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="upper-container">
         <h1> Math Partner</h1>
         <input type="button" id="savedBtn" value="SAVED SOLUTIONS" onclick="SavedButton()">
     </div>
+
     <div class="middle-container">
         <div class="box1">
-            <label for="solutionBar"><h2>Problem</h2></label>
-            <input type="text" id="solutionBar" placeholder="TYPE HERE......" required>
+            <label for="problemBar"><h2>Problem</h2></label>
+            <input type="text" id="problemBar" placeholder="TYPE HERE......" >
         </div>
+
         <div class="box2">
             <label for="categoryBar"><h2>select Category</h2></label>
             <select name="categoryBar" id="categoryBar">
@@ -25,11 +28,19 @@
                 <option value="option1">option1</option>
                 <option value="option2">option2</option>
             </select>
-
         </div>
+
         <div class="box3">
             <button type="submit" id="searchBtn" onclick="SearchButton()"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>
         </div>
+        
+    </div>
+
+
+    <div class="container-input">
+        <div class="inputBox1">Hello</div>
+        <div class="inputBox2">Hello World</div>
+        <button type="submit" id="deleteBtn" onclick="delBtn()"><i class="fa-solid fa-trash-can fa-3x"></i></button>
     </div>
 
     <script src="App.js"></script>
