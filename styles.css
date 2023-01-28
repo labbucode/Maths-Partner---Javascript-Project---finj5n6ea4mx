@@ -20,7 +20,7 @@ font-size: 20px;
 
 }
 
-.middle-container .box1 #solutionBar{
+.middle-container .box1 #problemBar{
 position: relative;
 bottom: 23px;
 left: -19px;
@@ -59,4 +59,18 @@ width: 66px;
 height: 62px;
 border-radius: 42px
 }
-
+.container-input{
+background-color: #d1d1d1c9;
+color: black;
+width: 65%;
+height: 250px;
+margin-left: 200px;
+border-radius: 25px;
+}
+.container-input button{
+    position: relative;
+    top: 79%;
+    left: 92%;
+    background-color: #d1d1d1c9;
+    border: none;
+}
