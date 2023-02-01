@@ -3,6 +3,9 @@ console.log("hello");
 
 function SavedButton(){
     console.log("working save btn")
+    var set =  document.querySelector(".inputBox2").value;
+    localStorage.setItem(set,"Hello");
+    console.log(localStorage.getItem(set));
 }
 
 function SearchButton(){
@@ -26,7 +29,8 @@ function SearchButton(){
     return reponse.json()
    }).then((value) => {
     console.log(value);
-    document.querySelector(".inputBox2").innerHTML = value.result;
+    var input2 =  value.result;
+    document.querySelector(".inputBox2").innerHTML = input2;
    })
 
 // let pro1 = fetch('https://newton.now.sh/api/v2/simplify/2^2+2(2)')
