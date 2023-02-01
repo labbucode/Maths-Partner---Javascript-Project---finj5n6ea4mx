@@ -42,5 +42,7 @@ function SearchButton(){
 
 function delBtn(ele){
     console.log("working delete btn")
-    
+    document.querySelector(".inputBox1").innerHTML = "";
+    document.querySelector(".inputBox2").innerHTML = "";
+
 }
