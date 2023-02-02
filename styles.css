@@ -1,9 +1,19 @@
 .upper-container{
-    display: flex;
+display: flex;
     flex-direction: row;
-    justify-content: space-around;  
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
 }
 .upper-container #savedBtn{
+background-color: black;
+color: white;
+border-radius: 14px;
+width: 200px;
+height: 53px;
+font-size: 20px;
+}
+.upper-container #historyBtn{
 background-color: black;
 color: white;
 border-radius: 14px;
@@ -68,9 +78,9 @@ margin-left: 200px;
 border-radius: 25px;
 }
 .container-input button{
-    position: relative;
-    top: 79%;
-    left: 92%;
-    background-color: #d1d1d1c9;
+    position: absolute;
+    top: 75%;
+    left: 75.8%;
+    background-color: transparent;
     border: none;
 }
