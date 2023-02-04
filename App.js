@@ -27,7 +27,7 @@ function historyButton(){
                 var h3 = document.createElement("h3");
                 h3.setAttribute('class', 'remove')
 
-                h3.innerHTML = `${p} ---->  Ans = ${ans}`;
+                h3.innerHTML = `${p} => Result = ${ans}`;
                 console.log(h3);
                 data.appendChild(h3);
 

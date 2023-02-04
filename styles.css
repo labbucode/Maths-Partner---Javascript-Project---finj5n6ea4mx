@@ -93,5 +93,19 @@ border-radius: 25px;
     height: auto;
     margin-left: 200px;
     border-radius: 25px;
+    padding-left: 2%;
     display: none;
 }
+ .inputBox1{
+    font-weight: 800;
+    font-size: xx-large;
+    margin-left: 2%;
+}
+ .inputBox2{
+    display: flex;
+    height: 75%;
+    align-items: center;
+    margin-left: 7%;
+    font-weight: 600;
+    font-size: x-large;
+ }
