@@ -41,9 +41,6 @@ function historyButton(){
             rem[i].remove();
         }
     }
-    
-   
-
 }
 
 function SearchButton(){
