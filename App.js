@@ -1,19 +1,49 @@
 console.log("hello");
-var set = 0;
+
 
 function SavedButton(){
     console.log("working save btn")
-   
-    var wet =  document.querySelector(".inputBox2").innerHTML;
-    localStorage.setItem(set,wet);
+    var wet =  document.querySelector(".inputBox1").innerHTML;
+    var set =  document.querySelector(".inputBox2").innerHTML;
+
+    localStorage.setItem(wet,set);
     console.log(localStorage.getItem(set));
     set++;
 }
+
+var hcount = 0 
 function historyButton(){
+
     console.log("working history btn")
-    for(x in localStorage){
-        console.log(localStorage[x]);
+    hcount++;
+    if(hcount%2==1){
+        document.querySelector(".historycon").style.display = "block";
+        var data = document.querySelector('.historycon');
+
+        for (p in localStorage) {
+            var ans = localStorage.getItem(p);
+            if (ans != null) {
+                // console.log(ans);
+                var h3 = document.createElement("h3");
+                h3.setAttribute('class', 'remove')
+
+                h3.innerHTML = `${p} ---->  Ans = ${ans}`;
+                console.log(h3);
+                data.appendChild(h3);
+
+            }
+        }
+    }else{
+        document.querySelector(".historycon").style.display = "none";
+        var rem = document.querySelectorAll('.remove');
+        console.log(rem);
+        for (var i = 0; i < rem.length; i++) {
+            rem[i].remove();
+        }
     }
+    
+   
+
 }
 
 function SearchButton(){

@@ -63,13 +63,14 @@ font-size: 20px;
 }
 .middle-container .box3 button{
 background-color: #d1d1d1c9;
-position: absolute;
-top: 202px;
-width: 66px;
-height: 62px;
-border-radius: 42px
+    position: relative;
+    top: 45px;
+    width: 65px;
+    height: 62px;
+    border-radius: 42px;
 }
 .container-input{
+    position: relative;
 background-color: #d1d1d1c9;
 color: black;
 width: 65%;
@@ -83,4 +84,13 @@ border-radius: 25px;
     left: 75.8%;
     background-color: transparent;
     border: none;
+}
+.historycon{
+    background-color: #d1d1d1c9;
+    color: black;
+    width: 65%;
+    height: 250px;
+    margin-left: 200px;
+    border-radius: 25px;
+    display: none;
 }
